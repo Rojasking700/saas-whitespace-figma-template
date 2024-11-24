@@ -15,10 +15,11 @@
   align-items: center;
 
   padding: $main-vertical-padding $main-horizontal-padding;
-
-  // * {
-    // color: $second-color-3;
-  // }
+ /*
+ */
+ * {
+   color: $second-color-3;
+ }
 
   .heroText {
     grid-area: heroText;
