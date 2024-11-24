@@ -1,3 +1,7 @@
 .main{
-  
+  display: grid;
+  grid-template-areas: 
+    "HeroSection"
+  ;
+  grid-template-rows: 880px;
 }
