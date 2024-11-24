@@ -2,6 +2,8 @@
 
 .sectionTwo {
   grid-area: SectionTwo;
+  
+  position: relative;
 
   display: grid;
   grid-template-areas: "sectionTwoText sectionTwo sectionTwoImg";
@@ -13,6 +15,7 @@
   .sectionTwoText {
     grid-area: sectionTwoText;
 
+    z-index: 1;
     h2 {
       margin-bottom: 24px;
     }
@@ -20,20 +23,27 @@
     p {
       line-height: 30px;
     }
-
+    .sectionTwoButton {
+      margin-top: 60px;
+      font-size: 16px;
+      padding: 16px 40px;
+      border-radius: 8px;
+      border: none;
+      background-color: $primary-color-2;
+      color: $second-color-3;
+    }
   }
 
   .sectionTwoImg {
     grid-area: sectionTwoImg;
   }
 
-  .sectionTwoButton {
-    margin-top: 60px;
-    font-size: 16px;
-    padding: 16px 40px;
-    border-radius: 8px;
-    border: none;
-    background-color: $primary-color-2;
-    color: $second-color-3;
+
+
+  .groupImg{
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    opacity: 0.2;
   }
 }

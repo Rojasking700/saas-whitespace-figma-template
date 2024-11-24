@@ -7,7 +7,6 @@
   background-image: url('~/public/imgs/LandingPage/hero/BackgroundElement.png');
   background-repeat: no-repeat;
   background-position: center;
-  /* Center the image */
 
   display: grid;
   grid-template-areas: "heroText heroImg";
@@ -15,8 +14,7 @@
   align-items: center;
 
   padding: $main-vertical-padding $main-horizontal-padding;
- /*
- */
+
  * {
    color: $second-color-3;
  }

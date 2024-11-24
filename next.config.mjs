@@ -1,5 +1,9 @@
 /** @type {import('next').NextConfig} */
 
-const nextConfig = {};
+const nextConfig = {
+  sassOptions: {
+    quietDeps: true, // Add this line
+  },
+};
 
 export default nextConfig;

@@ -4,6 +4,13 @@ import styles from '~/scss/LandingPage/SectionTwo.module.scss'
 export default function Section2() {
   return (
     <div className={styles.sectionTwo}>
+      <Image
+        className={styles.groupImg}
+        src={'/imgs/LandingPage/Section2/Group.png'}
+        alt='Analyze Data'
+        width={500}
+        height={500}
+      />
       <div className={styles.sectionTwoText}>
         <h2>
           Project Management
