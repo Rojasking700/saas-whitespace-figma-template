@@ -6,11 +6,22 @@
   position: relative;
 
   display: grid;
-  grid-template-areas: "sectionTwoText sectionTwo sectionTwoImg";
+  grid-template-areas: 
+                      "sectionTwoText sectionTwo sectionTwoImg" 
+                      "bImg b bText";
   grid-template-columns: 2fr 1fr 2fr;
+  // grid-template-columns:;
+  // grid-template-rows: 1fr 1fr;
   align-items: center;
 
   padding: $main-vertical-padding $main-horizontal-padding;
+
+  .groupImg{
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    opacity: 0.2;
+  }
 
   .sectionTwoText {
     grid-area: sectionTwoText;
@@ -38,12 +49,31 @@
     grid-area: sectionTwoImg;
   }
 
+  // ***********************************************
+  .bText {
+    grid-area: bText;
 
+    z-index: 1;
+    h2 {
+      margin-bottom: 24px;
+    }
 
-  .groupImg{
-    z-index: 0;
-    position: absolute;
-    left: 0;
-    opacity: 0.2;
+    p {
+      line-height: 30px;
+    }
+    .bButton {
+      margin-top: 60px;
+      font-size: 16px;
+      padding: 16px 40px;
+      border-radius: 8px;
+      border: none;
+      background-color: $primary-color-2;
+      color: $second-color-3;
+    }
   }
+
+  .bImg {
+    grid-area: bImg;
+  }
+
 }
