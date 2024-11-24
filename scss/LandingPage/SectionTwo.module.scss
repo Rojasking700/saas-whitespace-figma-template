@@ -1,13 +1,12 @@
-@use '../variable.scss' as *;
+@use '../variable.scss' as *; 
 
-.HeroSection {
-  grid-area: HeroSection;
-
-  background-color: $primary-color-1;
-  background-image: url('~/public/imgs/LandingPage/hero/BackgroundElement.png');
+.Section2{
+  // grid-area: HeroSection;
+  
+  // background-color: $primary-color-1;
+  // background-image: url('~/public/imgs/hero/BackgroundElement.png');
   background-repeat: no-repeat;
-  background-position: center;
-  /* Center the image */
+  background-position: center; /* Center the image */
 
   display: grid;
   grid-template-areas: "heroText heroImg";
@@ -16,28 +15,21 @@
 
   padding: $main-vertical-padding $main-horizontal-padding;
 
-  // * {
-    // color: $second-color-3;
-  // }
-
-  .heroText {
+  .heroText{
     grid-area: heroText;
-
-    h2 {
+    h2{
       margin-bottom: 24px;
     }
-
-    p {
+    p{
       line-height: 30px;
     }
 
   }
-
-  .heroImg {
+  .heroImg{
     grid-area: heroImg;
   }
 
-  .heroButton {
+  .heroButton{
     margin-top: 60px;
     font-size: 16px;
     padding: 16px 40px;

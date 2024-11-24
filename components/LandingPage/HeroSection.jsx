@@ -16,7 +16,7 @@ export default function HeroSection() {
       </div>
       <div className={styles.heroImg}>
         <Image
-          src={'/imgs/hero/AnalyzeData.png'}
+          src={'/imgs/LandingPage/hero/AnalyzeData.png'}
           alt='Analyze Data'
           width={600}
           height={600}

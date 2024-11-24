@@ -13,6 +13,10 @@
   grid-template-columns: 2fr 3fr;
 
   align-items: center;
+  
+  * {
+    color: $second-color-3;
+  }
 
   .ps-header-logo { 
     grid-area: logo;
