@@ -9,8 +9,9 @@
   grid-template-areas: 
                       "sectionTwoText sectionTwoImg" 
                       "bImg bText";
-  grid-template-columns:  2fr 2fr;
-  grid-template-rows: 550px 660px;
+  // grid-template-columns:  2fr 2fr;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 2fr));;
+  // grid-template-rows: 550px 660px;
   column-gap: 1em;
   row-gap: 100px;
   align-items: center;
