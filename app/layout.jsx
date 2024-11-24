@@ -3,6 +3,9 @@ import "./globals.css";
 import MainHeader from "@/components/header/MainHeader";
 import '../scss/styles.scss';
 
+import { Inter } from 'next/font/google'
+const inter = Inter({ subsets: ['latin'] })
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -22,7 +25,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      {/* <body className={`${geistSans.variable} ${geistMono.variable}`}> */}
+      <body className={`${inter.className}`}>
         <MainHeader />
         {children}
       </body>

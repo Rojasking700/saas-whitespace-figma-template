@@ -2,4 +2,39 @@
 
 .ps-main-header{
   background-color: $primary-color-1;
+
+  width: 100%;
+  display: grid;
+  grid-template-areas: "logo navv";
+  grid-template-columns: 1fr 3fr;
+
+  align-items: center;
+
+  .ps-header-logo { 
+    grid-area: logo;
+  }
+  .ps-main-header-nav{
+    grid-area: navv;
+    display: grid;
+    grid-template-areas: "links btns";
+    grid-template-columns: 1fr 1fr;
+    
+    align-items: center;
+
+    .ps-main-header-nav-links{
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-evenly;
+      .ps-nav-link{
+        display: flex;
+        flex-flow: row nowrap;
+        // justify-content: flex-start;
+        align-items: center;
+
+      }
+    }
+    
+  }
+  
+  grid-template-columns: "1fr 3fr";
 }
