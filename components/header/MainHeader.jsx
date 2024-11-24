@@ -35,7 +35,6 @@ export default function MainHeader() {
             /></Link>
           <Link href={"#"} className="ps-nav-link" >
             Rescources
-
             <Image
               src="/icons/DownArrow.png"
               alt="DownArrow"
@@ -45,7 +44,6 @@ export default function MainHeader() {
           </Link>
           <Link href={"#"} className="ps-nav-link" >
             Pricing
-
             <Image
               src="/icons/DownArrow.png"
               alt="DownArrow"
@@ -55,8 +53,8 @@ export default function MainHeader() {
           </Link>
         </div>
         <div className="ps-main-header-nav-btns">
-          <button>Login</button>
-          <button>Try Whitepace </button>
+          <button className="ps-main-header-nav-login-btn" >Login</button>
+          <button className="ps-main-header-nav-free-trial-btn" >Try Whitepace free</button>
         </div>
       </div>
 
