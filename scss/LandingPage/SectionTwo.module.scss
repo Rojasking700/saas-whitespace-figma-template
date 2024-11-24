@@ -7,11 +7,12 @@
 
   display: grid;
   grid-template-areas: 
-                      "sectionTwoText sectionTwo sectionTwoImg" 
-                      "bImg b bText";
-  grid-template-columns: 2fr 1fr 2fr;
-  // grid-template-columns:;
-  // grid-template-rows: 1fr 1fr;
+                      "sectionTwoText sectionTwoImg" 
+                      "bImg bText";
+  grid-template-columns:  2fr 2fr;
+  grid-template-rows: 550px 660px;
+  column-gap: 1em;
+  row-gap: 100px;
   align-items: center;
 
   padding: $main-vertical-padding $main-horizontal-padding;
@@ -42,11 +43,15 @@
       border: none;
       background-color: $primary-color-2;
       color: $second-color-3;
+      
+      position: relative;
+      z-index: 1;
     }
   }
 
   .sectionTwoImg {
     grid-area: sectionTwoImg;
+    place-self: center;
   }
 
   // ***********************************************
