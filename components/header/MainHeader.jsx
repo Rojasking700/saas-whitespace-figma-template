@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import '~/scss/MainHeader/MainHeader.scss';
 
 export default function MainHeader() {
   return (

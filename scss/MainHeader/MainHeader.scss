@@ -1,10 +1,12 @@
 @use '../variable.scss' as *; 
 
 .ps-main-header{
+  max-width: 1920px;
   background-color: $primary-color-1;
 
   width: 100%;
   padding: 16px 220px;
+  margin: 0px auto;
 
   display: grid;
   grid-template-areas: "logo navv";
