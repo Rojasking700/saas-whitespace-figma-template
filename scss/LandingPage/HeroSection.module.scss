@@ -7,4 +7,35 @@
   background-image: url('~/public/imgs/hero/BackgroundElement.png');
   background-repeat: no-repeat;
   background-position: center; /* Center the image */
+
+  display: grid;
+  grid-template-areas: "heroText heroImg";
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+
+  padding: $main-vertical-padding $main-horizontal-padding;
+
+  .heroText{
+    grid-area: heroText;
+    h2{
+      margin-bottom: 24px;
+    }
+    p{
+      line-height: 30px;
+    }
+
+  }
+  .heroImg{
+    grid-area: heroImg;
+  }
+
+  .heroButton{
+    margin-top: 60px;
+    font-size: 16px;
+    padding: 16px 40px;
+    border-radius: 8px;
+    border: none;
+    background-color: $primary-color-2;
+    color: $second-color-3;
+  }
 }
