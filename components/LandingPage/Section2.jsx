@@ -1,5 +1,5 @@
-import Image from 'next/image'
 import styles from '~/scss/LandingPage/SectionTwo.module.scss'
+import Image from 'next/image'
 
 export default function Section2() {
   return (

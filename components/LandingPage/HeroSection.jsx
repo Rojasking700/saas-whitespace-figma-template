@@ -1,5 +1,6 @@
-import Image from 'next/image'
 import styles from '~/scss/LandingPage/HeroSection.module.scss'
+import Image from 'next/image'
+import heroImage from '~/public/imgs/LandingPage/hero/AnalyzeData.png'
 
 export default function HeroSection() {
   return (
@@ -15,10 +16,12 @@ export default function HeroSection() {
       </div>
       <div className={styles.heroImg}>
         <Image
-          src={'/imgs/LandingPage/hero/AnalyzeData.png'}
+          // placeholder='blur'
+          // src={'/imgs/LandingPage/hero/AnalyzeData.png'}
+          src={heroImage}
           alt='Analyze Data'
-          width={600}
-          height={600}
+          // width={600}
+          // height={600}
         />
       </div>
     </div>
