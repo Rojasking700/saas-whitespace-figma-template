@@ -1,6 +1,6 @@
-import styles from '~/scss/LandingPage/HeroSection.module.scss'
-import Image from 'next/image'
-import heroImage from '~/public/imgs/LandingPage/hero/AnalyzeData.png'
+import styles from '~/scss/LandingPage/HeroSection.module.scss';
+import Image from 'next/image';
+import heroImage from '~/public/imgs/LandingPage/hero/AnalyzeData.png';
 
 export default function HeroSection() {
   return (
