@@ -64,9 +64,11 @@
         border: none;
         background-color: $primary-color-2;
         color: $second-color-3;
+        
+        min-width: 215px;
+
       }
     }
   }
   
-  grid-template-columns: "1fr 3fr";
 }

@@ -15,7 +15,9 @@ export default function Extension() {
         <p>
           Images, videos, PDFs and audio files are supported. Create math expressions and diagrams directly from the app. Take photos with the mobile app and save them to a note.
         </p>
-        <button className={styles.sectionTwoButton} >Get Started</button>
+        <button className={styles.sectionTwoButton} >
+          Get Started
+          </button>
       </div>
       <div className={styles.sectionTwoImg}>
         <Image

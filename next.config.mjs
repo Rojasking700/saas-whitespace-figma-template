@@ -3,15 +3,11 @@
 const nextConfig = {
   sassOptions: {
     quietDeps: true, // Add this line
-    silenceDeprecations: ["legacy-js-api"],
+    silenceDeprecations: ["legacy-js-api"], 
+     sassOptions: {
+      implementation: 'sass-embedded',
+    },
   },
-  // css: {
-  //   preprocessorOptions: {
-  //     scss: {
-  //       silenceDeprecations: ["legacy-js-api"],
-  //     },
-  //   },
-  // },
 };
 
 export default nextConfig;

@@ -1,5 +1,8 @@
 import styles from '~/scss/LandingPage/SectionTwo.module.scss'
 import Image from 'next/image'
+import GroupImg from '~/public/imgs/LandingPage/Section2/Group.png'
+import CodingAWebsite from '~/public/imgs/LandingPage/Section2/CodingAWebsite.png'
+import WorkTogetherImage from '~/public/imgs/LandingPage/Section2/WorkTogetherImage.png'
 
 export default function Section2() {
   return (
@@ -8,7 +11,7 @@ export default function Section2() {
       <div className={styles.sectionTwoText}>
         <Image
           className={styles.groupImg}
-          src={'/imgs/LandingPage/Section2/Group.png'}
+          src={GroupImg}
           alt='Analyze Data'
           width={500}
           height={500}
@@ -23,7 +26,7 @@ export default function Section2() {
       </div>
       <div className={styles.sectionTwoImg}>
         <Image
-          src={'/imgs/LandingPage/Section2/CodingAWebsite.png'}
+          src={CodingAWebsite}
           alt='Analyze Data'
           width={500}
           height={500}
@@ -32,7 +35,7 @@ export default function Section2() {
       {/* ***************************************************** */}
       <div className={styles.bImg}>
         <Image
-          src={'/imgs/LandingPage/Section2/WorkTogetherImage.png'}
+          src={WorkTogetherImage}
           alt='Analyze Data'
           width={710}
           height={661}

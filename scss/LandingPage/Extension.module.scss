@@ -5,12 +5,10 @@
 
   background-color: $primary-color-1;
 
-
-
   display: grid;
   grid-template-areas: "sectionTwoText sectionTwoImg";
   grid-template-columns: repeat(auto-fit, minmax(320px, 2fr));
-  ;
+  
   column-gap: 100px;
   align-items: center;
 
@@ -20,33 +18,24 @@
     color: $second-color-3;
   }
 
-  .sectionTwoText {
-    grid-area: sectionTwoText;
+}
 
-    z-index: 1;
-    h2 {
-      margin-bottom: 24px;
-    }
+.Customise {
+  grid-area: Customise;
 
-    p {
-      line-height: 30px;
-    }
-    .sectionTwoButton {
-      margin-top: 60px;
-      font-size: 16px;
-      padding: 16px 40px;
-      border-radius: 8px;
-      border: none;
-      background-color: $primary-color-2;
-      color: $second-color-3;
-      
-      position: relative;
-      z-index: 1;
-    }
-  }
+  background-color: $second-color-3;
 
-  .sectionTwoImg {
-    grid-area: sectionTwoImg;
-    place-self: center;
-  }
+  display: grid;
+  grid-template-areas: "bImg bText";
+  grid-template-columns: repeat(auto-fit, minmax(320px, 2fr));
+  
+  column-gap: 100px;
+  align-items: center;
+
+  padding: $main-vertical-padding $main-horizontal-padding;
+
+  // * {
+  //   color: $second-color-3;
+  // }
+
 }
