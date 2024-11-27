@@ -4,6 +4,7 @@ import HeroSection from "@/components/LandingPage/HeroSection";
 import Section2 from "~/components/LandingPage/section2";
 import Extension from "~/components/LandingPage/Extension";
 import Customise from "~/components/LandingPage/Customise";
+import ChooseYourPlan from "~/components/LandingPage/ChooseYourPlan";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <Section2 />
         <Extension />
         <Customise /> 
+        <ChooseYourPlan />
       </main>
     </div>
   );
