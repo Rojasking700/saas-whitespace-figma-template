@@ -2,15 +2,16 @@
 
 .sectionTwo {
   grid-area: SectionTwo;
-  
+
   position: relative;
 
   display: grid;
-  grid-template-areas: 
-                      "sectionTwoText sectionTwoImg" 
-                      "bImg bText";
+  grid-template-areas:
+    "sectionTwoText sectionTwoImg"
+    "bImg bText";
   // grid-template-columns:  2fr 2fr;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 2fr));;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 2fr));
+  ;
   // grid-template-rows: 550px 660px;
   column-gap: 1em;
   row-gap: 100px;
@@ -18,19 +19,21 @@
 
   padding: $main-vertical-padding $main-horizontal-padding;
 
-  .groupImg{
+  .groupImg {
     z-index: 0;
     position: absolute;
     left: 0;
     opacity: 0.2;
   }
 
-  
+
 }
+
 .sectionTwoText {
   grid-area: sectionTwoText;
 
   z-index: 1;
+
   h2 {
     margin-bottom: 24px;
   }
@@ -38,6 +41,7 @@
   p {
     line-height: 30px;
   }
+
   .sectionTwoButton {
     margin-top: 60px;
     font-size: 16px;
@@ -46,7 +50,7 @@
     border: none;
     background-color: $primary-color-2;
     color: $second-color-3;
-    
+
     position: relative;
     z-index: 1;
   }
@@ -62,6 +66,7 @@
   grid-area: bText;
 
   z-index: 1;
+
   h2 {
     margin-bottom: 24px;
   }
@@ -69,6 +74,7 @@
   p {
     line-height: 30px;
   }
+
   .bButton {
     margin-top: 60px;
     font-size: 16px;
@@ -92,27 +98,28 @@
 
 
 
-.chooseYourPlan{
+.chooseYourPlan {
   padding: $main-vertical-padding $main-horizontal-padding;
 
   // display: grid;
 
-  .CYP_title{
+  .CYP_title {
     text-align: center;
-    h1{
+
+    h1 {
       margin-bottom: 24px;
     }
   }
 
-  .plans{
+  .plans {
     display: flex;
-    flex-flow: row nowrap; 
+    flex-flow: row nowrap;
     justify-content: space-between;
     // gap: 40px;
 
     margin: 60px 0px;
 
-    .planCard{
+    .planCard {
       max-width: 450px;
       border: 1px solid $second-color-1;
       border-radius: 10px;
@@ -125,13 +132,13 @@
       align-items: flex-start;
       gap: 25px;
 
-      ul{
+      ul {
         display: flex;
         flex-flow: column nowrap;
         gap: 20px;
       }
 
-      button{
+      button {
         padding: 16px 40px;
         font-size: 16px;
         background-color: transparent;
@@ -139,25 +146,70 @@
         border-radius: 10px;
       }
     }
-    .planCard:nth-child(2){
-     background-color: $primary-color-1;
-     color: $second-color-3;
-     transform: scale(1.1);
-     padding: 80px 30px;
-     border: none;
 
-     h4{
-      color: $second-color-1;
-     }
-
-     button{
-      background-color: $primary-color-2;
-      color:  $second-color-3;
+    .planCard:nth-child(2) {
+      background-color: $primary-color-1;
+      color: $second-color-3;
+      transform: scale(1.1);
+      padding: 80px 30px;
       border: none;
-     }
-   }
+
+      h4 {
+        color: $second-color-1;
+      }
+
+      button {
+        background-color: $primary-color-2;
+        color: $second-color-3;
+        border: none;
+      }
+    }
 
   }
+  overflow: visible;
 
+}
+
+.yourWork {
+  padding: $main-vertical-padding $main-horizontal-padding;
+  
+  background-color: $primary-color-1;
+  color: $second-color-3;
+  
+  text-align: center;
+  
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  
+  position: relative;
+  
+  .YW_groupImg{
+    z-index: 0;
+    position: absolute;
+    top: -220px;
+    left: 0;
+    opacity: 0.2;
+    // overflow: visible;
+  }
+  overflow: visible;
+
+  h1 {
+    margin-bottom: 24px;
+  }
+
+  p {
+    max-width: 1050px;
+    margin-bottom: 60px;
+  }
+
+  button {
+    background-color: $primary-color-2;
+    color: $second-color-3;
+    border: none;
+    padding: 16px 40px;
+    border-radius: 10px;
+    display: inline-block;
+  }
 
 }
