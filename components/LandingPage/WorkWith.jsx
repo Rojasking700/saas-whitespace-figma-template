@@ -2,7 +2,7 @@ import stylesExtension from '~/scss/LandingPage/Extension.module.scss';
 import styles from '~/scss/LandingPage/SectionTwo.module.scss';
 import Image from 'next/image';
 import ContentMediaFolder from '~/public/imgs/LandingPage/workWith/Element.png'
-import Apps from '~/public/imgs/LandingPage/WorkWith/Apps.png'
+import Apps from '~/public/imgs/LandingPage/workWith/Apps.png'
 
 export default function WorkWith() {
   return (
