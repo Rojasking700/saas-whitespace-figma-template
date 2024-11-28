@@ -1,14 +1,13 @@
-import stylesExtension from '~/scss/LandingPage/Extension.module.scss';
 import styles from '~/scss/LandingPage/SectionTwo.module.scss';
 import Image from 'next/image';
-import ContentMediaFolder from '~/public/imgs/LandingPage/workWith/Element.png'
+import BackgrounElement from '~/public/imgs/LandingPage/workWith/Element.png'
 import Apps from '~/public/imgs/LandingPage/workWith/Apps.png'
 
 export default function WorkWith() {
   return (
     <div className={`${styles.section} ${styles.blueBackground}`}>
       <Image
-          src={ContentMediaFolder}
+          src={BackgrounElement}
           alt='Background Element'
           className={styles.backgroundImg}
       />
@@ -16,8 +15,6 @@ export default function WorkWith() {
         <Image
           src={Apps}
           alt='Analyze Data'
-          // width={500}
-          // height={500}
         />
       </div>
       <div className={styles.sectionTwoText}>

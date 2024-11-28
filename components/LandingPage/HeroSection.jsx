@@ -1,27 +1,39 @@
-import styles from '~/scss/LandingPage/HeroSection.module.scss';
+// import styles from '~/scss/LandingPage/HeroSection.module.scss';
+import styles from '~/scss/LandingPage/SectionTwo.module.scss';
 import Image from 'next/image';
 import heroImage from '~/public/imgs/LandingPage/hero/AnalyzeData.png';
+import BackgrounElement from '~/public/imgs/LandingPage/hero/BackgroundElement.png'
 
 export default function HeroSection() {
   return (
-    <div className={styles.HeroSection}>
-      <div className={styles.heroText}>
+    <div className={`${styles.section} ${styles.blueBackground}`}>
+      <Image
+        src={BackgrounElement}
+        alt='Background Element'
+        // fill
+        className={styles.backgroundImg}
+      />
+      <div className={styles.sectionTwoText}>
         <h2>
           Get More Done with whitepace
         </h2>
         <p>
           Project management software that enables your teams to collaborate, plan, analyze and manage everyday tasks
         </p>
-        <button className={styles.heroButton} >Try Whitepace free</button>
+        <button className={styles.sectionTwoButton} >Try Whitepace free</button>
       </div>
-      <div className={styles.heroImg}>
+      <div className={styles.sectionTwoImg}>
         <Image
-          // placeholder='blur'
-          // src={'/imgs/LandingPage/hero/AnalyzeData.png'}
           src={heroImage}
           alt='Analyze Data'
-          // width={600}
-          // height={600}
+          // width={'100%'}
+          // fill
+          // sizes="100vw"
+          // Make the image display full width
+          // style={{
+          //   width: '100%',
+          //   height: 'auto',
+          // }}
         />
       </div>
     </div>

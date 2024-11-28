@@ -6,7 +6,7 @@ import ContentMediaFolder2 from '~/public/imgs/LandingPage/extension/ContentMedi
 
 export default function Extension() {
   return (
-    <div className={stylesExtension.extension}>
+    <div className={`${styles.section} ${styles.blueBackground}`}>
 
       <div className={styles.sectionTwoText}>
         <h2>
@@ -23,8 +23,6 @@ export default function Extension() {
         <Image
           src={ContentMediaFolder2}
           alt='Analyze Data'
-          // width={500}
-          // height={500}
         />
       </div>
     </div>
