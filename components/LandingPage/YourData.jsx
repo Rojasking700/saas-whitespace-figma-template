@@ -13,7 +13,7 @@ export default function YourData() {
             100% your data
           </h2>
           <p>
-            The app is open source and your notes are saved to an open format, so you'll always have access to them.
+            The app is open source and your notes are saved to an open format, so you&apos;l always have access to them.
             Uses End-To-End Encryption (E2EE) to secure your notes and ensure no-one but yourself can access them.
           </p>
           <button className={styles.sectionTwoButton} >Read More</button>
