@@ -1,8 +1,8 @@
 import styles from '~/scss/LandingPage/SectionTwo.module.scss'
 import Image from 'next/image'
-import GroupImg from '~/public/imgs/LandingPage/Section2/Group.png'
-import CodingAWebsite from '~/public/imgs/LandingPage/Section2/CodingAWebsite.png'
-import WorkTogetherImage from '~/public/imgs/LandingPage/Section2/WorkTogetherImage.png'
+import GroupImg from '~/public/imgs/LandingPage/section2/Group.png'
+import CodingAWebsite from '~/public/imgs/LandingPage/section2/CodingAWebsite.png'
+import WorkTogetherImage from '~/public/imgs/LandingPage/section2/WorkTogetherImage.png'
 
 export default function Section2() {
   return (
