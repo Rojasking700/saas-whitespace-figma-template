@@ -1,6 +1,7 @@
 import "./globals.css";
 import styles from '~/scss/_MainLayout.module.scss'
 import MainHeader from "@/components/header/MainHeader";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
