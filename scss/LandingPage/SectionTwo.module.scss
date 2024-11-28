@@ -213,3 +213,25 @@
   }
 
 }
+
+.section{   
+  padding: $main-vertical-padding $main-horizontal-padding;
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  // gap: 60px;
+  // row-gap: 100px;
+}
+
+.ourSponsors{
+  padding: $main-vertical-padding $main-horizontal-padding;
+
+  text-align: center;
+  
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  
+  gap: 100px
+}

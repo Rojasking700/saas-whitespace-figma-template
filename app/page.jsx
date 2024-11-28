@@ -6,6 +6,7 @@ import Extension from "~/components/LandingPage/Extension";
 import Customise from "~/components/LandingPage/Customise";
 import ChooseYourPlan from "~/components/LandingPage/ChooseYourPlan";
 import YourWork from "~/components/LandingPage/YourWork";
+import YourData from "~/components/LandingPage/YourData";
 
 export default function Home() {
   return (
@@ -17,11 +18,8 @@ export default function Home() {
         <Customise /> 
         <ChooseYourPlan />
         <YourWork />
-        <br />
-        <br />
-        <br />
-        <br />
-        words
+        <YourData />
+    
       </main>
     </div>
   );
