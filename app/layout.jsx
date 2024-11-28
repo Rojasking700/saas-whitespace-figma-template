@@ -17,6 +17,7 @@ export default function RootLayout({ children }) {
       <body className={`${inter.className} ${styles.layout_container}`}>
         <MainHeader />
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
