@@ -7,12 +7,7 @@ import BackgrounElement from '~/public/imgs/LandingPage/hero/BackgroundElement.p
 export default function HeroSection() {
   return (
     <div className={`${styles.section} ${styles.blueBackground}`}>
-      <Image
-        src={BackgrounElement}
-        alt='Background Element'
-        // fill
-        className={styles.backgroundImg}
-      />
+
       <div className={styles.sectionTwoText}>
         <h2>
           Get More Done with whitepace
@@ -26,16 +21,14 @@ export default function HeroSection() {
         <Image
           src={heroImage}
           alt='Analyze Data'
-          // width={'100%'}
-          // fill
-          // sizes="100vw"
-          // Make the image display full width
-          // style={{
-          //   width: '100%',
-          //   height: 'auto',
-          // }}
         />
       </div>
+      <Image
+        src={BackgrounElement}
+        alt='Background Element'
+        // fill
+        className={styles.backgroundImg}
+      />
     </div>
   )
 }
