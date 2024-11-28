@@ -7,6 +7,7 @@ import Customise from "~/components/LandingPage/Customise";
 import ChooseYourPlan from "~/components/LandingPage/ChooseYourPlan";
 import YourWork from "~/components/LandingPage/YourWork";
 import YourData from "~/components/LandingPage/YourData";
+import WorkWith from "~/components/LandingPage/WorkWith";
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
         <ChooseYourPlan />
         <YourWork />
         <YourData />
-    
+        <WorkWith />
       </main>
     </div>
   );

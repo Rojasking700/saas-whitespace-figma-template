@@ -59,6 +59,7 @@
 .sectionTwoImg {
   grid-area: sectionTwoImg;
   place-self: center;
+  z-index: 1;
 }
 
 // ***********************************************
@@ -220,8 +221,16 @@
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  // gap: 60px;
+  gap: 60px;
   // row-gap: 100px;
+
+  position: relative;
+  z-index: 1;
+}
+
+.blueBackground{
+  background-color: $primary-color-1;
+  color: $second-color-3;
 }
 
 .ourSponsors{
@@ -234,4 +243,10 @@
   align-items: center;
   
   gap: 100px
+}
+
+.backgroundImg{
+  position: absolute;
+  left: 0;
+  z-index: 0;
 }
