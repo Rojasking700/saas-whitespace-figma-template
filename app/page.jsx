@@ -9,6 +9,7 @@ import YourWork from "~/components/LandingPage/YourWork";
 import YourData from "~/components/LandingPage/YourData";
 import WorkWith from "~/components/LandingPage/WorkWith";
 import ClientSay from "~/components/LandingPage/ClientSay";
+import TryToday from "~/components/LandingPage/TryToday";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <YourData />
         <WorkWith />
         <ClientSay />
+        <TryToday />
       </main>
     </div>
   );
