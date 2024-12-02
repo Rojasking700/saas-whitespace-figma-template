@@ -1,6 +1,7 @@
 import styles from '~/scss/LandingPage/SectionTwo.module.scss';
 import Image from 'next/image';
 import Quote from '~/public/imgs/LandingPage/clientSay/Quote.png';
+import BlueQuote from '~/public/imgs/LandingPage/clientSay/BlueQuote.png';
 import Avater from '~/public/imgs/LandingPage/clientSay/Avater.png';
 import Avater2 from '~/public/imgs/LandingPage/clientSay/Avater2.png';
 import Avater3 from '~/public/imgs/LandingPage/clientSay/Avater3.png';
@@ -9,18 +10,21 @@ export default function ClientSay() {
 
   const clientsTesti = [
     {
+      quote: BlueQuote,
       testimonee: 'Whitepate is designed as a collaboration tool for businesses that is a full project management solution.',
       name: 'Oberon Shaw, MCH',
       personDesc: 'Head of Talent Acquisition, North America',
       headShot: Avater,
     },
     {
+      quote: Quote,
       testimonee: 'Whitepate is designed as a collaboration tool for businesses that is a full project management solution.',
       name: 'Oberon Shaw, MCH',
       personDesc: 'Head of Talent Acquisition, North America',
       headShot: Avater2,
     },
     {
+      quote: Quote,
       testimonee: 'Whitepate is designed as a collaboration tool for businesses that is a full project management solution.',
       name: 'Oberon Shaw, MCH',
       personDesc: 'Head of Talent Acquisition, North America',
@@ -40,7 +44,7 @@ export default function ClientSay() {
             <div key={index} className={styles.testi}>
               <div className={styles.testiTop}>
                 <Image
-                  src={Quote}
+                  src={client.quote}
                   alt='Quote image'
                 />
                 <p>{client.testimonee}</p>
