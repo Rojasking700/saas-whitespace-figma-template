@@ -1,8 +1,54 @@
-@use '../variable.scss' as *; 
+@use '../variable.scss' as *;
 
-.mainFooter{
+.mainFooter {
   padding: $main-vertical-padding $main-horizontal-padding;
   background-color: $primary-color-1;
   color: $second-color-3;
 
+  ul {
+    list-style-type: none;
+  }
+
+  .footerTop {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #2E4E73;
+    padding-bottom: 80px;
+    margin-bottom: 20px;
+
+    div {
+      flex-basis: 200px;
+    }
+
+    .linkDiv {
+      h5{
+        font-size: 18px;
+        line-height: 20px;
+      }
+      li{
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 300;
+      }
+    }
+  }
+
+  .footerBottom {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    ul {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      gap: 70px;
+
+      li {
+        font-weight: 300;
+      }
+    }
+  }
 }
