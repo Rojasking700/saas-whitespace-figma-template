@@ -1,0 +1,8 @@
+@use '../variable.scss' as *; 
+
+.mainFooter{
+  padding: $main-vertical-padding $main-horizontal-padding;
+  background-color: $primary-color-1;
+  color: $second-color-3;
+
+}

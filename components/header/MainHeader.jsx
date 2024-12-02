@@ -6,7 +6,7 @@ import DownArrow from '~/public/icons/DownArrow.png';
 
 export default function MainHeader() {
   return (
-    <div className="ps-main-header">
+    <nav className="ps-main-header">
       <div className="ps-header-logo">
         <Link href={'/'} >
           <Image
@@ -64,6 +64,6 @@ export default function MainHeader() {
         </div>
       </div>
 
-    </div>
+    </nav>
   )
 }

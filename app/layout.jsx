@@ -4,6 +4,7 @@ import MainHeader from "@/components/header/MainHeader";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import { Inter } from 'next/font/google'
+import MainFooter from "~/components/footer/MainFooter";
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
       <body className={`${inter.className} ${styles.layout_container}`}>
         <MainHeader />
         {children}
+        <MainFooter />
         <SpeedInsights />
       </body>
     </html>
