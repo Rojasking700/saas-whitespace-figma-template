@@ -74,6 +74,12 @@
     }
   }
 
+  
+  @media screen and (max-width: $lg){
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
 .blueBackground {
@@ -150,6 +156,16 @@
 
   overflow: visible;
 
+  
+  @media screen and (max-width: $xxxl) {
+    padding: $main-vertical-padding 100px;
+  }
+
+  @media screen and (max-width: $xxl) {
+    padding: $main-vertical-padding 5%;
+    gap: 50px;
+  }
+
 }
 
 .yourWork {
@@ -192,6 +208,21 @@
     padding: 16px 40px;
     border-radius: 10px;
     display: inline-block;
+  }
+
+  @media screen and (max-width: $xxxl) {
+    padding: $main-vertical-padding 100px;
+  }
+
+  @media screen and (max-width: $xxl) {
+    padding: $main-vertical-padding 5%;
+    gap: 50px;
+  }
+  
+  @media screen and (max-width: $lg){
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
   }
 
 }
