@@ -52,21 +52,18 @@ export default function MainFooter() {
           </p>
         </div>
 
-        {/* <div>  */}
-          {/* links */}
-          {
-            links.map((link) => (
-              <div className={styles.linkDiv}>
-                <h5>{link.title}</h5>
-                <ul>
-                  {link.links.map((lin) => (
-                    <li>{lin}</li>
-                  ))}
-                </ul>
-              </div>
-            ))
-          }
-        {/* </div> */}
+        {
+          links.map((link, index) => (
+            <div className={styles.linkDiv} key={index}>
+              <h5>{link.title}</h5>
+              <ul>
+                {link.links.map((lin) => (
+                  <li>{lin}</li>
+                ))}
+              </ul>
+            </div>
+          ))
+        }
 
         <div> {/* try today */}
           <h5>Try It Today</h5>
@@ -86,10 +83,10 @@ export default function MainFooter() {
           <li>@2021 Whitepace LLC.</li>
         </ul>
 
-          <Image 
+        <Image
           src={SocialIcons}
           alt='App Icons'
-          />
+        />
 
       </div>
     </footer>
