@@ -59,8 +59,8 @@ export default function MainFooter() {
             <div className={styles.linkDiv} key={index}>
               <h5>{link.title}</h5>
               <ul>
-                {link.links.map((lin) => (
-                  <li>{lin}</li>
+                {link.links.map((lin, index) => (
+                  <li key={index} >{lin}</li>
                 ))}
               </ul>
             </div>
