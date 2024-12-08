@@ -3,6 +3,8 @@ import logo from '~/public/imgs/logos/Logo.png';
 import Image from "next/image";
 import Link from "next/link";
 import SocialIcons from '~/public/imgs/footer/SocialIcons.png';
+import LangGlobIcon from '~/public/icons/LangGlobIcon.png';
+import DownArrow from '~/public/icons/DownArrow.png';
 
 export default function MainFooter() {
 
@@ -37,7 +39,7 @@ export default function MainFooter() {
     <footer className={styles.mainFooter}>
       <div className={styles.footerTop} > {/* top */}
 
-        <div> {/* logo */}
+        <div className={styles.whitepceFooter} > {/* logo */}
           <Link href={'/'} >
             <Image
               src={logo}
@@ -65,7 +67,7 @@ export default function MainFooter() {
           ))
         }
 
-        <div> {/* try today */}
+        <div className={styles.tryTodayFooter} > {/* try today */}
           <h5>Try It Today</h5>
           <p>Get Started for free. Add your whole team as your needs grow.</p>
           <button>Start Today</button>
@@ -76,7 +78,19 @@ export default function MainFooter() {
       <div className={styles.footerBottom} >
         {/* copy right stuff */}
         <ul>
-          <li>English</li>
+          <li
+            className={styles.language}
+          >
+            <Image
+              src={LangGlobIcon}
+              alt='Language Globe Icon'
+            />
+            English
+            <Image
+              src={DownArrow}
+              alt='Down Arrow'
+            />
+          </li>
           <li>Terms & privacy</li>
           <li>Security</li>
           <li>Status</li>

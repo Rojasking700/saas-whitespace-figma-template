@@ -21,16 +21,43 @@
     div {
       flex-basis: 200px;
     }
+    .whitepceFooter{
+      img{
+        margin-bottom: 15px;
+      }
+      p{
+        line-height: 30px;
+      }
+    }
 
     .linkDiv {
-      h5{
+      h5 {
         font-size: 18px;
         line-height: 20px;
+        margin-bottom: 15px;
       }
-      li{
+
+      li {
         font-size: 16px;
         line-height: 20px;
         font-weight: 300;
+        margin-bottom: 15px;
+      }
+    }
+
+    .tryTodayFooter{
+      display: flex;
+      flex-flow: column nowrap;
+      // justify-content: flex-start;
+      align-items: flex-start;
+      gap: 23px;    
+      button {
+        padding: 16px 40px;
+        font-size: 16px;
+        border-radius: 10px;
+        background-color: $primary-color-2;
+        color: $second-color-3;
+        border: none;
       }
     }
   }
@@ -48,6 +75,12 @@
 
       li {
         font-weight: 300;
+      }
+
+      .language {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
       }
     }
   }
