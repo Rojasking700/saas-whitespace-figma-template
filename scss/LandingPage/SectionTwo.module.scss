@@ -74,11 +74,20 @@
     }
   }
 
-  
-  @media screen and (max-width: $lg){
+
+  @media screen and (max-width: $lg) {
     flex-flow: column nowrap;
     justify-content: center;
     text-align: center;
+  }
+
+  @media screen and (max-width: $sm) {
+    .sectionTwoImg {
+      img {
+        min-width: 95%;
+        height: auto;
+      }
+    }
   }
 }
 
@@ -156,7 +165,7 @@
 
   overflow: visible;
 
-  
+
   @media screen and (max-width: $xxxl) {
     padding: $main-vertical-padding 100px;
   }
@@ -218,8 +227,8 @@
     padding: $main-vertical-padding 5%;
     gap: 50px;
   }
-  
-  @media screen and (max-width: $lg){
+
+  @media screen and (max-width: $lg) {
     flex-flow: column nowrap;
     justify-content: center;
     text-align: center;
@@ -314,7 +323,8 @@
       color: $second-color-4;
       background-color: $second-color-3;
       // div {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
       // }
       .testiTop {
         border-bottom: 1px solid $second-color-4;
@@ -324,7 +334,7 @@
 
 }
 
-.tryToday{
+.tryToday {
   padding: $main-vertical-padding $main-horizontal-padding;
 
   background-color: $primary-color-1;
@@ -333,23 +343,23 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  
-  .innerCont{
+
+  .innerCont {
     max-width: 600px;
     text-align: center;
 
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-  
+
     gap: 40px;
 
-    p{
+    p {
       font-size: 24px;
       font-weight: 300;
       line-height: 36px;
     }
-    
+
     button {
       padding: 16px 40px;
       font-size: 16px;
