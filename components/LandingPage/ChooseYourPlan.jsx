@@ -56,26 +56,29 @@ export default function ChooseYourPlan() {
         <h2>Choose Your Plan</h2>
         <p>Whether you want to get organized, keep your personal life on track, or boost workplace productivity, Evernote has the right plan for you.</p>
       </div>
-      <div className={styles.plans}>
-        {
-          plansInfo.map((plan, index) => (
-              <div key={index} className={styles.planCard}> 
-                <h5>{plan.title}</h5>
-                <h4>${plan.price}</h4>
-                <p>{plan.summary}</p>
-                <ul>
-                  {
-                    plan.bulletPoints.map((bp, index2) => (
-                      <li key={index2}>
-                        {bp}
-                      </li>
-                    ))
-                  }
-                </ul>
-                <button>Get Started</button>
-              </div>
-            ))
-        }
+      <div className={styles.outer_plans}>
+
+        <div className={styles.plans}>
+          {
+            plansInfo.map((plan, index) => (
+                <div key={index} className={styles.planCard}> 
+                  <h5>{plan.title}</h5>
+                  <h4>${plan.price}</h4>
+                  <p>{plan.summary}</p>
+                  <ul>
+                    {
+                      plan.bulletPoints.map((bp, index2) => (
+                        <li key={index2}>
+                          {bp}
+                        </li>
+                      ))
+                    }
+                  </ul>
+                  <button>Get Started</button>
+                </div>
+              ))
+          }
+        </div>
       </div>
 
     </div>
