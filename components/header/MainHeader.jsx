@@ -3,6 +3,7 @@ import Link from "next/link";
 import '~/scss/MainHeader/MainHeader.scss';
 import logo from '~/public/imgs/logos/Logo.png';
 import DownArrow from '~/public/icons/DownArrow.png';
+import HumMenu from '~/public/icons/HumMenu.png';
 
 export default function MainHeader() {
   return (
@@ -60,7 +61,14 @@ export default function MainHeader() {
           <button className="ps-main-header-nav-login-btn" >Login</button>
           <button className="ps-main-header-nav-free-trial-btn" >
             Try Whitepace free
-            </button>
+          </button>
+          <Image
+            id="HumMenu"
+            src={HumMenu}
+            alt="HumMenu"
+            width={29}
+            height={24}
+          />
         </div>
       </div>
 

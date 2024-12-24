@@ -1,11 +1,11 @@
-@use '../variable.scss' as *; 
+@use '../variable.scss' as *;
 
-.ps-main-header{
+.ps-main-header {
   max-width: 1920px;
   background-color: $primary-color-1;
 
   width: 100%;
-  padding: 16px 220px;
+  padding: 16px $main-horizontal-padding;
   margin: 0px auto;
 
   display: grid;
@@ -13,42 +13,47 @@
   grid-template-columns: 2fr 3fr;
 
   align-items: center;
-  
+
   * {
     color: $second-color-3;
   }
 
-  .ps-header-logo { 
+  .ps-header-logo {
     grid-area: logo;
   }
-  .ps-main-header-nav{
+
+  .ps-main-header-nav {
     grid-area: navv;
     display: grid;
     grid-template-areas: "links btns";
     grid-template-columns: 1fr 1fr;
-    
+
     align-items: center;
     // justify-items: stretch;
 
 
-    .ps-main-header-nav-links{
+    .ps-main-header-nav-links {
       display: flex;
       flex-flow: row nowrap;
       justify-content: flex-end;
       align-items: center;
       gap: 34px;
-      .ps-nav-link{
+
+      .ps-nav-link {
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
 
       }
     }
-    .ps-main-header-nav-btns{
+
+    .ps-main-header-nav-btns {
       display: flex;
       flex-flow: row nowrap;
       justify-content: flex-end;
-      .ps-main-header-nav-login-btn{
+      align-items: center;
+
+      .ps-main-header-nav-login-btn {
         font-size: 16px;
         padding: 16px 40px;
         border-radius: 8px;
@@ -57,18 +62,65 @@
         color: $primary-color-1;
         margin-right: 24px;
       }
-      .ps-main-header-nav-free-trial-btn{
+
+      .ps-main-header-nav-free-trial-btn {
         font-size: 16px;
         padding: 16px 40px;
         border-radius: 8px;
         border: none;
         background-color: $primary-color-2;
         color: $second-color-3;
-        
         min-width: 215px;
 
       }
+      #HumMenu{
+        display: none;
+      }
     }
   }
-  
+
+  @media screen and (max-width: $xxxl) {
+    padding: 16px 100px;
+  }
+
+  @media screen and (max-width: $xxl) {
+    padding: 16px 5%;
+  }
+
+  @media screen and (max-width: 1180px) {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 100%;
+
+    .ps-main-header-nav {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      // width: 100%;
+
+      .ps-main-header-nav-links {
+        display: none;
+      }
+      .ps-main-header-nav-btns {
+        .ps-main-header-nav-free-trial-btn {
+          margin-right: 24px;
+        }
+        #HumMenu{
+          display: block;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: $md){
+    .ps-main-header-nav-login-btn {
+      display: none;
+    }
+    .ps-main-header-nav-free-trial-btn {
+      display: none;
+    }
+
+  }
+
 }
