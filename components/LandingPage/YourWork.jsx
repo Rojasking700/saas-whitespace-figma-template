@@ -14,7 +14,7 @@ export default function YourWork() {
         src={GroupImg}
         alt='Background'
       />
-      <h1>Your work, everywhere you are</h1>
+      <h2>Your work, everywhere you are</h2>
       <p>
         Access your notes from your computer, phone or tablet by synchronising with
         various services, including whitepace, Dropbox and OneDrive.

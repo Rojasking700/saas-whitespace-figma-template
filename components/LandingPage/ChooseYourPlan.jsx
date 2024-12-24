@@ -53,7 +53,7 @@ export default function ChooseYourPlan() {
   return (
     <div className={styles.chooseYourPlan}>
       <div className={styles.CYP_title}>
-        <h1>Choose Your Plan</h1>
+        <h2>Choose Your Plan</h2>
         <p>Whether you want to get organized, keep your personal life on track, or boost workplace productivity, Evernote has the right plan for you.</p>
       </div>
       <div className={styles.plans}>

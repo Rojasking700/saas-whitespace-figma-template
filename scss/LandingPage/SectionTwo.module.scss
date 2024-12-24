@@ -1,5 +1,7 @@
 @use '../variable.scss' as *;
 
+
+
 .groupImg {
   z-index: 0;
   position: absolute;
@@ -82,6 +84,7 @@
   }
 
   @media screen and (max-width: $sm) {
+    padding: 80px 5%;
     .sectionTwoImg {
       img {
         min-width: 95%;

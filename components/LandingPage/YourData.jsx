@@ -31,7 +31,7 @@ export default function YourData() {
 
       </div>
       <div className={styles.ourSponsors}>
-        <h1>Our sponsors</h1>
+        <h2>Our sponsors</h2>
         <Image
           src={sponsorsImg}
           alt='Sponsors'

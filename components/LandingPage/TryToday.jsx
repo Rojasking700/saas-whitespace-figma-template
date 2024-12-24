@@ -7,7 +7,7 @@ export default function TryToday() {
   return (
     <div className={styles.tryToday}>
       <div className={styles.innerCont}>
-        <h1>Try Whitepace today</h1>
+        <h2>Try Whitepace today</h2>
         <p>
           Get started for free.
           <br />

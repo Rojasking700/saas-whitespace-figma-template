@@ -18,9 +18,9 @@ export default function WorkWith() {
         />
       </div>
       <div className={styles.sectionTwoText}>
-        <h1>
+        <h2>
           Work with Your Favorite Apps Using whitepace
-        </h1>
+        </h2>
         <p>
           Whitepace teams up with your favorite software. Integrate with over 1000+ apps with Zapier to have all the tools you need for your project success.
         </p>

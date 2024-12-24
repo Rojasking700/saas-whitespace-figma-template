@@ -36,7 +36,7 @@ export default function ClientSay() {
   return (
     <div className={styles.clientSay}>
       <div className={styles.CS_title}>
-        <h1>What Our Clients Says</h1>
+        <h2>What Our Clients Says</h2>
       </div>
       <div className={styles.testimonees}>
         {
