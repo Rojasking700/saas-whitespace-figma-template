@@ -281,13 +281,23 @@
   }
 
   @media screen and (max-width: $xl) {
+    padding: 80px 5%;
+    gap: 20px;
     .sponsors {
       display: flex;
       flex-flow: column nowrap;
       align-items: center;
-      gap: 50px;
+      gap: 20px;
     }
 
+  }
+  @media screen and (max-width: $sm){
+    .sponsors {
+      img{
+        max-width: 250px;
+        height: auto;
+      }
+    }
   }
 
 }
