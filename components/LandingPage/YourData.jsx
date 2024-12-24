@@ -1,13 +1,15 @@
 import styles from '~/scss/LandingPage/SectionTwo.module.scss'
 import Image from 'next/image'
 import Element from '~/public/imgs/LandingPage/yourData/Element.png'
-import sponsorsImg from '~/public/imgs/LandingPage/ourSponsors/sponsors.png'
+import Apple from '~/public/imgs/LandingPage/ourSponsors/Apple.png'
+import Google from '~/public/imgs/LandingPage/ourSponsors/Google.png'
+import Microsoft from '~/public/imgs/LandingPage/ourSponsors/Microsoft.png'
+import Slack from '~/public/imgs/LandingPage/ourSponsors/Slack.png'
 
 export default function YourData() {
   return (
     <div>
       <div className={styles.section}>
-
         <div className={styles.sectionTwoText}>
           <h2>
             100% your data
@@ -22,20 +24,30 @@ export default function YourData() {
           <Image
             src={Element}
             alt='Data'
-          // width={500}
-          // height={500}
           />
         </div>
-        {/* ***************************************************** */}
-
-
       </div>
+
       <div className={styles.ourSponsors}>
         <h2>Our sponsors</h2>
-        <Image
-          src={sponsorsImg}
-          alt='Sponsors'
-        />
+        <div className={styles.sponsors}>
+          <Image
+            src={Apple}
+            alt='Apple'
+          />
+          <Image
+            src={Google}
+            alt='Google'
+          />
+          <Image
+            src={Microsoft}
+            alt='Microsoft'
+          />
+          <Image
+            src={Slack}
+            alt='Slack'
+          />
+        </div>
       </div>
     </div>
   )

@@ -78,13 +78,13 @@
 
 
   @media screen and (max-width: $lg) {
+    padding: 80px 5%;
     flex-flow: column nowrap;
     justify-content: center;
     text-align: center;
   }
 
   @media screen and (max-width: $sm) {
-    padding: 80px 5%;
     .sectionTwoImg {
       img {
         min-width: 95%;
@@ -176,12 +176,15 @@
     padding: $main-vertical-padding 5%;
     gap: 50px;
   }
+
   @media screen and (max-width: $xl) {
     padding: 80px 5%;
-    .outer_plans{
+
+    .outer_plans {
       overflow-x: scroll;
     }
-    .plans{
+
+    .plans {
       min-width: 1050px;
 
     }
@@ -244,7 +247,7 @@
     flex-flow: column nowrap;
     justify-content: center;
     text-align: center;
-    
+
     padding: 80px 5%;
   }
 
@@ -255,11 +258,38 @@
 
   text-align: center;
 
+  gap: 100px;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
 
-  gap: 100px
+  .sponsors {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 100px;
+
+  }
+
+  @media screen and (max-width: $xxxl) {
+    padding: $main-vertical-padding 100px;
+  }
+
+  @media screen and (max-width: $xxl) {
+    padding: $main-vertical-padding 5%;
+    gap: 50px;
+  }
+
+  @media screen and (max-width: $xl) {
+    .sponsors {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      gap: 50px;
+    }
+
+  }
+
 }
 
 .backgroundImg {
