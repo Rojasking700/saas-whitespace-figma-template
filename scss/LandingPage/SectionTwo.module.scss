@@ -457,4 +457,15 @@
   }
 
 
+  @media screen and (max-width: $xxxl) {
+    padding: $main-vertical-padding 100px;
+  }
+
+  @media screen and (max-width: $xxl) {
+    padding: $main-vertical-padding 5%;
+  }
+
+  @media screen and (max-width: $xl) {
+    padding: 80px 5%;
+  }
 }
