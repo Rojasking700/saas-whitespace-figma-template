@@ -111,9 +111,10 @@
     .footerTop {
       padding-bottom: 40px;
     }
+
   }
 
-  @media screen and (max-width: 915px) {
+  @media screen and (max-width: 980px) {
     padding: 20px 2%;
 
     .footerTop {
@@ -124,6 +125,28 @@
       div {
         flex-basis: auto;
         max-width: 528px;
+      }
+    }
+
+    .footerBottom {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+      gap: 20px;
+
+      ul {
+        gap: 20px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 615px) {
+
+    .footerBottom {
+      ul {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
       }
     }
   }
