@@ -38,32 +38,34 @@ export default function ClientSay() {
       <div className={styles.CS_title}>
         <h2>What Our Clients Says</h2>
       </div>
-      <div className={styles.testimonees}>
-        {
-          clientsTesti.map((client, index) => (
-            <div key={index} className={styles.testi}>
-              <div className={styles.testiTop}>
-                <Image
-                  src={client.quote}
-                  alt='Quote image'
-                />
-                <p>{client.testimonee}</p>
-              </div>
-              <div className={styles.testiBottom}>
-                <Image
-                  src={client.headShot}
-                  alt={'Client headshot ' + index}
-                />
-
-                <div className={styles.personDesc}>
-                  <h5>{client.name}</h5>
-                  <p>{client.personDesc}</p>
+      <div className={styles.outerTestimonees}>
+        <div className={styles.testimonees}>
+          {
+            clientsTesti.map((client, index) => (
+              <div key={index} className={styles.testi}>
+                <div className={styles.testiTop}>
+                  <Image
+                    src={client.quote}
+                    alt='Quote image'
+                  />
+                  <p>{client.testimonee}</p>
                 </div>
+                <div className={styles.testiBottom}>
+                  <Image
+                    src={client.headShot}
+                    alt={'Client headshot ' + index}
+                  />
 
+                  <div className={styles.personDesc}>
+                    <h5>{client.name}</h5>
+                    <p>{client.personDesc}</p>
+                  </div>
+
+                </div>
               </div>
-            </div>
-          ))
-        }
+            ))
+          }
+        </div>
       </div>
 
     </div>

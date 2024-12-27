@@ -186,7 +186,6 @@
 
     .plans {
       min-width: 1050px;
-
     }
   }
 
@@ -283,6 +282,7 @@
   @media screen and (max-width: $xl) {
     padding: 80px 5%;
     gap: 20px;
+
     .sponsors {
       display: flex;
       flex-flow: column nowrap;
@@ -291,9 +291,10 @@
     }
 
   }
-  @media screen and (max-width: $sm){
+
+  @media screen and (max-width: $sm) {
     .sponsors {
-      img{
+      img {
         max-width: 250px;
         height: auto;
       }
@@ -311,7 +312,6 @@
 .clientSay {
   padding: $main-vertical-padding $main-horizontal-padding;
 
-
   .CS_title {
     text-align: center;
 
@@ -323,8 +323,7 @@
   .testimonees {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
-    // gap: 40px;
+    justify-content: center;
 
     margin: 60px 0px;
 
@@ -334,7 +333,7 @@
       margin: 20px;
       background-color: $primary-color-2;
       color: $second-color-3;
-      width: 470px;
+      width: 450px;
 
       .testiTop {
         img {
@@ -376,16 +375,49 @@
     .testi:nth-child(1) {
       color: $second-color-4;
       background-color: $second-color-3;
-      // div {
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-      // }
       .testiTop {
         border-bottom: 1px solid $second-color-4;
       }
     }
   }
 
+  @media screen and (max-width: $xxxl) {
+    padding: $main-vertical-padding 100px;
+
+    .testimonees {
+      .testi {
+        padding: 50px 30px;
+        margin: 10px;
+      }
+    }
+  }
+
+  @media screen and (max-width: $xxl) {
+    padding: $main-vertical-padding 5%;
+
+    .testimonees {
+      .testi {
+        padding: 40px 20px;
+        min-width: 400px;
+      }
+    }
+  }
+
+  @media screen and (max-width: $xl) {
+    padding: 80px 5%;
+
+    .outerTestimonees {
+      overflow-x: scroll;
+
+      .testimonees {
+        min-width: 1050px;
+        justify-content: flex-start;
+      }
+    }
+
+  }
 }
 
 .tryToday {
