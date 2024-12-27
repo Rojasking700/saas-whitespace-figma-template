@@ -17,15 +17,18 @@
     border-bottom: 1px solid #2E4E73;
     padding-bottom: 80px;
     margin-bottom: 20px;
+    gap: 10px;
 
     div {
       flex-basis: 200px;
     }
-    .whitepceFooter{
-      img{
+
+    .whitepceFooter {
+      img {
         margin-bottom: 15px;
       }
-      p{
+
+      p {
         line-height: 30px;
       }
     }
@@ -45,12 +48,13 @@
       }
     }
 
-    .tryTodayFooter{
+    .tryTodayFooter {
       display: flex;
       flex-flow: column nowrap;
       // justify-content: flex-start;
       align-items: flex-start;
-      gap: 23px;    
+      gap: 23px;
+
       button {
         padding: 16px 40px;
         font-size: 16px;
@@ -81,6 +85,45 @@
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
+      }
+    }
+  }
+
+
+
+  @media screen and (max-width: $xxxl) {
+    padding: $main-vertical-padding 100px;
+  }
+
+  @media screen and (max-width: $xxl) {
+    padding: 80px 5%;
+
+    .footerTop {
+      div {
+        flex-basis: 200px;
+      }
+    }
+  }
+
+  @media screen and (max-width: $xl) {
+    padding: 20px 2%;
+
+    .footerTop {
+      padding-bottom: 40px;
+    }
+  }
+
+  @media screen and (max-width: 915px) {
+    padding: 20px 2%;
+
+    .footerTop {
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+      gap: 30px;
+
+      div {
+        flex-basis: auto;
+        max-width: 528px;
       }
     }
   }
