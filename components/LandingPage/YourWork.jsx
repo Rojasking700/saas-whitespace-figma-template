@@ -23,10 +23,6 @@ export default function YourWork() {
       </p>
       <button>
         Try Taskey
-        <Image
-          src={PointRightArrow}
-          alt='Point Right Arrow'
-        />
       </button>
 
 

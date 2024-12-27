@@ -15,10 +15,6 @@ export default function TryToday() {
         </p>
         <button>Try Taskey free</button>
         <p>On a big team? Contact sales</p>
-        <Image
-          src={AppIcons}
-          alt='App icons'
-        />
       </div>
     </div>
   )
