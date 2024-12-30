@@ -1,7 +1,8 @@
 import "./globals.css";
 import styles from '~/scss/_MainLayout.module.scss'
 import MainHeader from "@/components/header/MainHeader";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 import { Inter } from 'next/font/google'
 import MainFooter from "~/components/footer/MainFooter";
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
         {children}
         <MainFooter />
         <SpeedInsights />
+        <Analytics/>
       </body>
     </html>
   );
