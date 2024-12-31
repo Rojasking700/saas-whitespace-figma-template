@@ -21,6 +21,7 @@ export default function HeroSection() {
         <Image
           src={heroImage}
           alt='Analyze Data'
+          priority={true}
         />
       </div>
       <Image
@@ -28,6 +29,7 @@ export default function HeroSection() {
         alt='Background Element'
         // fill
         className={styles.backgroundImg}
+        priority={true}
       />
     </div>
   )
